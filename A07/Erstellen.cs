@@ -2,7 +2,7 @@ using System;
 
 namespace A07 {
     static class Erstellen {        
-        public static void FragenErstellen(int i, int score) {
+        public static void FragenErstellen(int i, int score) { // i ist keine Aussagekräftige Variable, die geschweiften Klammern sollten in einer neuen Zeile beginnen, Englisch statt Deutsch im Code nutzen
             Console.WriteLine("Tippe deine Frage ein:");
             String fragenEingabe = Console.ReadLine();
             AnzahlAntwortmöglichkeiten(i, score);
@@ -25,7 +25,7 @@ namespace A07 {
             Console.WriteLine("Tippe 3: Quiz beenden");
 
             int eingabe = Int32.Parse(Console.ReadLine());
-            if (eingabe==1) {
+            if (eingabe==1) { // hier wäre switch case eine bessere Alternative 
                 Erstellen.FragenErstellen(i, score);
             } else if (eingabe==2) {
                 FragenAusgabe(i, score);
